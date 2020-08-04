@@ -48,7 +48,6 @@
            		<property name="password" value="${brokerPassword}"></property>
            	  	<property name="username" value="${brokerUsername}"></property>
 				<property name="virtualHost" value="${virtualHost}"></property>
-           		<property name="useSSL" value="${useSSL}"></property>  
            </bean>
            
            <rabbit:template id="template" connection-factory="cachingConnectionFacotry" confirm-callback="rumConfirmCallback"></rabbit:template>
